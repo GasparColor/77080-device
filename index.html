@@ -9,17 +9,16 @@
 <!-- header -->
 
     <header class="page-header wrapper">
-      <h1 class="page-title">
-        Device
-      </h1>
+      <div class="page-logo">
+        <a href="#">Device</a>
+      </div>
 
-        <div class="search-on-site">
-          <label for="search-field"></label>
+        <form class="search-on-site">
           <input id="search-field" type="search">
-        </div>
+        </form>
 
         <div class="special-menu">
-          <div class="special-menu user-block">
+          <div class="user-block">
             <a href="#">Войти</a>
           </div>
             <ul class="special-menu__list">
@@ -32,13 +31,13 @@
 
           <div class="catalog">
           <div class="catalog__title">Каталог товаров</div>
-          <div class="catalog__menu catalog__menu-hidden">
+          <div class="catalog__menu catalog__menu--hidden">
 
             <ul class="catalog__list">
-              <li class="catalog__item"><a href="#">Виртуальная реальность
-              </a></li>
-              <li class="catalog__item"><a href="#">Моноподы для селфи
-              </a></li>
+              <li class="catalog__item"><a href="#">Виртуальная реальность</a></li>
+
+              <li class="catalog__item"><a href="#">Моноподы для селфи</a></li>
+
               <li class="catalog__item"><a href="#">Экшн-камеры</a></li>
             </ul>
 
@@ -69,9 +68,9 @@
       <img class="slider__img" src="#" alt="Monopod">
 
         <div class="slider__inner-wrapper">
-        <h1 class="slider__title">
+        <h2 class="slider__title">
           Делай селфи, как Бен Стиллер!
-        </h1>
+        </h2>
           <p class="slider__descr">
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -82,18 +81,18 @@
             <div class="product-features">
 
               <div class="product-features__item">
-                <div class="product-features__value">8.5 м</div>
-                  <div class="product-features__descr">длина палки</div>
+                <span class="product-features__value">8.5 м</span>
+                  <span class="product-features__descr">длина палки</span>
               </div>
 
               <div class="product-features__item">
-                <div class="product-features__value">5 кг</div>
-                  <div class="product-features__descr">вес палки</div>
+                <span class="product-features__value">5 кг</span>
+                  <span class="product-features__descr">вес палки</span>
               </div>
 
               <div class="product-features__item">
-                <div class="product-features__value">Карбон</div>
-                  <div class="product-features__descr">материал</div>
+                <span class="product-features__value">Карбон</span>
+                  <span class="product-features__descr">материал</span>
               </div>
 
             </div>
@@ -166,7 +165,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="virtual reallity">
+          <a class="popular-section__img" href="#"><img src="http://placehold.it/160x160" alt="virtual reallity"></a>
         </div>
           <a href="#" class="popular-section__title">
             Виртуальная реальность
@@ -175,7 +174,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="monopods">
+          <a class="popular-section__img" href="#"><img src="http://placehold.it/160x160" alt="monopods"></a>
         </div>
           <a href="#" class="popular-section__title">
             Моноподы для селфи
@@ -184,7 +183,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="action cameras">
+          <a class="popular-section__img" href="#"><img src="http://placehold.it/160x160" alt="action cameras"></a>
         </div>
           <a href="#" class="popular-section__title">
             Экшн-камеры
@@ -193,7 +192,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="fitness bracelets">
+          <a class="popular-section__img" href="#"><img src="http://placehold.it/160x160" alt="fitness bracelets"></a>
         </div>
           <a href="#" class="popular-section__title">
             Фитнесс браслеты
@@ -202,7 +201,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="smart watch">
+          <a class="popular-section__img" href="#"><img src="http://placehold.it/160x160" alt="smart watch"></a>
         </div>
           <a href="#" class="popular-section__title">
             Умные часы
@@ -211,7 +210,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <img class="popular-section__img" src="http://placehold.it/160x160" alt="quadrocopters">
+          <a href="#"><img class="popular-section__img" src="http://placehold.it/160x160" alt="quadrocopters"></a>
         </div>
           <a href="#" class="popular-section__title">
             Квадрокоптеры
@@ -236,10 +235,10 @@
 
     <div class="logotypes">
 
-      <img class="logotypes__img" src="" alt="logotype-pict">
-      <img class="logotypes__img" src="" alt="logotype-pict">
-      <img class="logotypes__img" src="" alt="logotype-pict">
-      <img class="logotypes__img" src="" alt="logotype-pict">
+      <a class="logotypes__img" href="#"><img  src="" alt="logotype-pict"></a>
+      <a class="logotypes__img" href="#"><img  src="" alt="logotype-pict"></a>
+      <a class="logotypes__img" href="#"><img  src="" alt="logotype-pict"></a>
+      <a class="logotypes__img" href="#"><img  src="" alt="logotype-pict"></a>
 
     </div>
 
@@ -247,9 +246,9 @@
 
     <section class="about-us">
 
-      <h1 class="about-us__title">
+      <h2 class="about-us__title">
         О нас
-      </h1>
+      </h2>
 
         <p class="about-us__text">
           Огромный выбор гаджетов не оставит равнодушным
@@ -275,20 +274,16 @@
 
     <section class="contacts">
 
-      <h1 class="contacts__title">
+      <h2 class="contacts__title">
         Контакты
-      </h1>
+      </h2>
 
         <p class="contacts__text">
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
 
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749528647!2d37.527423951649105!3d55.68703400443423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1484766739250"
-
-         width="560" height="220"  allowfullscreen>
-
-         </iframe>
+        <a href="#"><img src="http://placehold.it/560x220" width="560" height="220"  alt="карта"></a>
 
            <a class="contacts__link link-style" href="#">Напишите нам</a>
 
@@ -297,10 +292,12 @@
 <!-- footer -->
 
     <footer class="page-footer">
-       <h1 class="footer-logo">Device</h1>
+      <div class="footer-logo">
+        <a href="#">Device</a>
+      </h1>
 
        <div class="special-menu footer-menu">
-         <div class="special-menu user-block">
+         <div class="user-block">
            <a href="#">Войти</a>
          </div>
            <ul class="special-menu__list">

@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Девайс</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
 
   <!-- header -->
 
-      <header class="catalog-header  wrapper">
-        <h1 class="page-title">
-          Device
-        </h1>
+      <header class="page-header  wrapper">
+        <div class="page-logo">
+          <a href="#">Device</a>
+        </div>
 
-          <div class="search-on-site">
-            <label for="search-field"></label>
+          <form class="search-on-site">
             <input id="search-field" type="search">
-          </div>
+          </form>
 
           <div class="special-menu">
-            <div class="special-menu user-block">
+            <div class="user-block">
               <a href="#">Войти</a>
             </div>
-              <ul class="special-menu__list">
-                <li class="special-menu__item"><a href="#">Сравнить</a></li>
-                <li class="special-menu__item"><a href="#">Корзина</a></li>
-              </ul>
+
+            <ul class="special-menu__list">
+              <li class="special-menu__item"><a href="#">Сравнить</a></li>
+              <li class="special-menu__item"><a href="#">Корзина</a></li>
+            </ul>
           </div>
 
           <nav class="main-nav">
 
             <div class="catalog">
             <div class="catalog__title">Каталог товаров</div>
-            <div class="catalog__menu catalog__menu-hidden">
+            <div class="catalog__menu catalog__menu--hidden">
 
               <ul class="catalog__list">
-                <li class="catalog__item"><a href="#">Виртуальная реальность
-                </a></li>
-                <li class="catalog__item"><a href="#">Моноподы для селфи
-                </a></li>
+                <li class="catalog__item"><a href="#">Виртуальная реальность</a></li>
+                <li class="catalog__item"><a href="#">Моноподы для селфи</a></li>
                 <li class="catalog__item"><a href="#">Экшн-камеры</a></li>
               </ul>
 
@@ -64,7 +62,7 @@
 
 <!--  navigation -->
 
-    <nav class="catalog-nav">
+    <section class="catalog-nav">
       <h1 class="catalog-nav__title">Моноподы для селфи</h1>
 
       <ul class="breadcrumbs">
@@ -72,16 +70,18 @@
         <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
         <li class="breadcrumbs__item"><a href="#">Моноподы для селфи</a></li>
       </ul>
-    </nav>
+    </section>
 
 <!-- filter -->
 
-    <section class="product-filter">
-      <h2 class="product-filter__title">Фильтр :</h2>
+    <aside class="product-filter">
+      <form action="get">
+      <h2 class="product-filter__title">Фильтр:</h2>
 
       <div class="range-filter">
         <h3 class="range-filter__title">Стоимость</h3>
         <div class="range-filter__controls">
+        </div>
         </div>
 
         <div class="range-filter__price">
@@ -124,8 +124,8 @@
 
 
       </div>
-
-    </section>
+      </form>
+    </aside>
 
 <!-- catalog-content  -->
 
@@ -143,29 +143,29 @@
 
       <div class="catalog-list">
 
-        <div class="catalog-item">
+        <article class="catalog-item">
             <img class="catalog-item__img" src="http://placehold.it/360x380" alt="изображение товара">
-              <p class="catalog-item__descr">Любительская селфи-палка</p>
+              <a href="#" class="catalog-item__descr">Любительская селфи-палка</a>
               <span class="catalog-item__price">500 руб.</span>
-        </div>
+        </article>
 
-        <div class="catalog-item">
+        <article class="catalog-item">
             <img class="catalog-item__img" src="http://placehold.it/360x380" alt="изображение товара">
-              <p class="catalog-item__descr">Профессиональная селфи-палка </p>
+              <a href="#" class="catalog-item__descr">Профессиональная селфи-палка </a>
               <span class="catalog-item__price">1 500 руб.</span>
-        </div>
+        </article>
 
-        <div class="catalog-item">
+        <article class="catalog-item">
             <img class="catalog-item__img" src="http://placehold.it/360x380" alt="изображение товара">
-              <p class="catalog-item__descr">Непотопляемая селфи-палка</p>
+              <a href="#" class="catalog-item__descr">Непотопляемая селфи-палка</a>
               <span class="catalog-item__price">2 500 руб.</span>
-        </div>
+        </article>
 
-        <div class="catalog-item">
+        <article class="catalog-item">
             <img class="catalog-item__img" src="http://placehold.it/360x380" alt="изображение товара">
-              <p class="catalog-item__descr">Селфи-палка «Следуй за мной»</p>
+              <a href="#" class="catalog-item__descr">Селфи-палка «Следуй за мной»</a>
               <span class="catalog-item__price">4 900 руб.</span>
-        </div>
+        </article>
 
       </div>
 
@@ -173,23 +173,25 @@
 <!-- pages-control -->
 
       <div class="pages-control">
-        <button class="pages-control__prev-btn">Назад</button>
+        <a class="pages-control__prev-btn">Назад</a>
         <ul class="pages-control__list">
           <li class="pages-control__item"><a href="#">1</a></li>
           <li class="pages-control__item"><a href="#">2</a></li>
           <li class="pages-control__item"><a href="#">3</a></li>
         </ul>
-        <button class="pages-control__next-btn">Вперед</button>
+        <a class="pages-control__next-btn">Вперед</a>
       </div>
 
 </section>
   <!-- footer -->
 
       <footer class="page-footer">
-         <h1 class="footer-logo">Device</h1>
+         <div class="footer-logo">
+           <a href="#">Device</a>
+         </h1>
 
          <div class="special-menu footer-menu">
-           <div class="special-menu user-block">
+           <div class="user-block">
              <a href="#">Войти</a>
            </div>
              <ul class="special-menu__list">

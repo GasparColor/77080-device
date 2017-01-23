@@ -91,6 +91,16 @@ input[type="search"]{
   margin-top: 36px;
   float:right;
   padding:0;
+  position: relative;
+}
+.main-nav__list::after{
+  content: "";
+  display: block;
+  width: 99px;
+  height: 7px;
+  position: absolute;
+  bottom: -96px;
+  background-color: white;
 }
 
 .main-nav__list li{
@@ -125,6 +135,16 @@ input[type="search"]{
 .slider__inner-wrapper{
   width: 500px;
   float:right;
+}
+.slider__title::after{
+  content: "01";
+  position: absolute;
+  top: -107px;
+  right: -12px;
+  font-size: 178px;
+  font-family: "Gilroy-bold", sans-serif,serif;
+  color:white;
+
 }
 .slider__title{
   font-family: "Gilroy-bold",sans-serif,serif;
@@ -187,7 +207,7 @@ input[type="search"]{
   width: 158px;
 }
 .popular-section__img-block{
-  margin-bottom:40px;
+  margin-bottom:38px;
 }
 
 .popular-section__title{
@@ -195,7 +215,10 @@ input[type="search"]{
   font-size: 18px;
   color:#000;
   text-decoration: none;
-  margin-top:40px;
+
+}
+.social-links__item{
+  font-size: 0;
 }
 
 
@@ -204,7 +227,7 @@ input[type="search"]{
 .services{
   background-color: #e5e5e5;
   margin-top: 182px;
-  height: 288px; /*---?---*/
+  height: 288px; /*--- по другому не смог сжать высоту блока, не понял че он так вытянулся, а min-height не работает ---*/
 }
 .services__list{
   float:left;
@@ -220,6 +243,7 @@ input[type="search"]{
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
+  letter-spacing: 0.1em;
   font-family: "Gilroy-bold",sans-serif,serif;
   color:#000;
 }
@@ -234,7 +258,7 @@ input[type="search"]{
 .services__title{
   font-size: 47px;
   font-family: "Gilroy-bold",sans-serif,serif;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .services__text{
   width: 430px;
@@ -252,17 +276,61 @@ input[type="search"]{
 /* logotypes
 ==================================================*/
 
+.logotypes {
+  margin-top: 273px;
+}
+
+
 /* about-us
 ==================================================*/
 .about-us{
   width: 560px;
-  outline:dotted 1px black;
   float:left;
 }
 .contacts{
   width: 560px;
   float:right;
-  outline:dotted 1px blue;
+}
+
+.about-us__title, .contacts__title{
+  font-size: 47px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  letter-spacing: 0.01em;
+}
+
+.about-us__text, .contacts__text{
+  font-size: 15px;
+  font-family: "OpenSans",sans-serif,serif;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.about-us__list{
+  display:inline-block;
+  margin-top: 15px;
+}
+.about-us__list li{
+  margin-top:20px;
+}
+.about-us__list a{
+  color:#000;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.about-us__link, .contacts__link{
+  display: block;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#000;
+  margin:57px 0 91px 21px;
+  letter-spacing: 0.2em;
+}
+.contacts__map img{
+  margin-bottom: 25px;
 }
 
 /* footer
@@ -272,16 +340,41 @@ input[type="search"]{
   min-height: 320px;
   background-color: #464646;
 }
-.footer-logo{display: table}
+.footer-logo::after{
+  content: "";
+  display: block;
+  width: 81px;
+  height: 7px;
+  position: absolute;
+  bottom: -133px;
+  background-color: #ffe27f;
+}
+.footer-logo{
+  margin-top: 56px;
+  float: left;
+  position: relative;
+}
 .footer-logo a{
   text-decoration: none;
   color:#f7e184;
   text-transform: uppercase;
+  font-size: 48px;
+  font-family: "Gilroy-bold",sans-serif,serif;
 }
-.page-footer__contacts{float:left}
+.page-footer__contacts{
+  margin-top: 122px;
+  display: inline-block;
+}
 .page-footer__contacts p{
   font-size: 15px;
-  font-family: "Open Sans",sans-serif,serif;
+  font-family: "OpenSans",sans-serif,serif;
+  color:#fff;
+}
+
+.footer-menu{
+  margin-top:68px;
+}
+.footer-menu a{
   color:#fff;
 }
 
@@ -292,11 +385,17 @@ input[type="search"]{
 .footer-nav{
 display: inline-block;}
 .footer-nav__list{list-style-type: none;display: block;}
-.footer-nav__list li{display: inline-block;}
+.footer-nav__list li{
+  margin-right: 45px;
+
+  display: inline-block;}
 .footer-nav__item a{
   text-decoration: none;
   color:#fff;
+  font-size: 18px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
+  font-family: "Gilroy-bold",sans-serif,serif;
 }
 
 .social-links{
@@ -309,7 +408,10 @@ display:inline-block;
 .htmlacademy-logo{float:right;}
 .phone-number{
   float: right;
-  outline: 1px solid red;
+  font-size: 15px;
+  font-family: "OpenSans",sans-serif,serif;
+  color:#fff;
+
 }
 
 /*catalog

@@ -49,7 +49,6 @@ input[type="search"]{
 }
 
 .special-menu{
-  outline: 1px solid green;
   display: inline-block;
   float:right;
   margin-top: -4px;
@@ -77,7 +76,6 @@ input[type="search"]{
 .catalog{
   margin-top: 36px;
   display:inline-block;
-  outline: 1px solid maroon;
 }
 .catalog__title{
   color:#000;
@@ -98,7 +96,8 @@ input[type="search"]{
 .main-nav__list li{
   display: inline-block;
 }
-
+.main-nav__list a:hover{opacity:0.6;}
+.main-nav__list a:active{color:#939393;}
 .main-nav__list a{
   color:#000;
   letter-spacing: 1.5px;
@@ -121,12 +120,10 @@ input[type="search"]{
 .slider__img{
   margin-top: -110px;
   margin-left: 32px;
-  outline: 1px solid black;
 }
 
 .slider__inner-wrapper{
   width: 500px;
-  outline: 1px solid red;
   float:right;
 }
 .slider__title{
@@ -136,6 +133,7 @@ input[type="search"]{
   position: relative;
   top: -28px;
 }
+
 .slider__descr{
   margin:0;
   font-family: "OpenSans",sans-serif,serif;
@@ -175,9 +173,29 @@ input[type="search"]{
 
 /* popular-section
 ==================================================*/
+.popular-sections{
+  font-size: 0;
+}
+.popular-section:last-child{
+  margin-right: 0px;
+}
 .popular-section{
   display: inline-block;
+  vertical-align: top;
   margin-top:100px;
+  margin-right: 42px;
+  width: 158px;
+}
+.popular-section__img-block{
+  margin-bottom:40px;
+}
+
+.popular-section__title{
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 18px;
+  color:#000;
+  text-decoration: none;
+  margin-top:40px;
 }
 
 
@@ -185,23 +203,54 @@ input[type="search"]{
 ==================================================*/
 .services{
   background-color: #e5e5e5;
+  margin-top: 182px;
+  height: 288px; /*---?---*/
 }
 .services__list{
   float:left;
+  position:relative;
+  top:-25px;
 }
 .services__item{
   list-style-type:none;
-  padding-bottom:25px
+  margin-bottom:45px;
+
 }
 .services__item a{
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 18px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  color:#000;
 }
 .services__info{
-  width: 700px;
+  width: 753px;
   float:right;
-  outline: 1px dotted black;
+  position: relative;
+  top: -68px;
+
 }
+
+.services__title{
+  font-size: 47px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  margin-bottom: 27px;
+}
+.services__text{
+  width: 430px;
+  display:block;
+  font-family: "OpenSans",sans-serif,serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+.services__img{
+  float:right;
+  position: relative;
+  margin-right: 62px;
+  top: -171px;
+}
+/* logotypes
+==================================================*/
 
 /* about-us
 ==================================================*/

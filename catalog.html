@@ -12,7 +12,7 @@
 
     <!-- header -->
 
-    <header class="page-header wrapper">
+    <header class="page-header page-header__index wrapper">
       <div class="container">
         <div class="page-logo">
           <a href="#">Device</a>
@@ -108,6 +108,7 @@
     </section>
 
     <!-- filter -->
+    
     <div class="wrapper clearfix">
       <aside class="product-filter">
         <form action="get">
@@ -115,7 +116,11 @@
 
           <div class="range-filter">
             <h3 class="range-filter__title">Стоимость</h3>
-            <div class="range-filter__controls"></div>
+            <div class="range-filter__controls">
+              <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
 
             <div class="range-filter__price">
               <label for="from">от</label>
@@ -154,7 +159,7 @@
             <label for="bluetooth-off">Нет</label>
           </div>
 
-          <button type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
 
         </form>
       </aside>
@@ -163,8 +168,8 @@
 
       <section class="catalog-content">
 
-        <div class="content-sort">
-          <h2 class="content-sort__title">Сортировка</h2>
+        <div class="content-sort clearfix">
+          <h2 class="content-sort__title">Сортировка:</h2>
 
           <ul class="content-sort__list">
             <li class="content-sort__item">
@@ -177,16 +182,18 @@
               <a href="#">По популярности</a>
             </li>
           </ul>
+
+          <ul class="sort-up-down">
+            <li class="sort-up-down__item sort-up-down__item--up">
+              <a href="#"></a>
+            </li>
+            <li class="sort-up-down__item sort-up-down__item--down">
+              <a href="#"></a>
+            </li>
+          </ul>
         </div>
 
-        <ul class="sort-up-down">
-          <li class="sort-up-down__item sort-up-down__item--up">
-            <a href="#"></a>
-          </li>
-          <li class="sort-up-down__item sort-up-down__item--down">
-            <a href="#"></a>
-          </li>
-        </ul>
+
 
         <div class="catalog-list clearfix">
 

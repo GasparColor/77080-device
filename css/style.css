@@ -23,7 +23,9 @@
   background-color: #f7e296;
   margin:40px auto 0;
   min-height: 300px;
-
+}
+.page-header__index{
+  min-height: 185px;
 }
 
 .page-logo{
@@ -93,7 +95,7 @@ input[type="search"]{
   padding:0;
   position: relative;
 }
-.main-nav__list::after{
+.main-nav__list--underline::after{
   content: "";
   display: block;
   width: 99px;
@@ -433,49 +435,205 @@ display:inline-block;
   margin-right: 25px;
 }
 
+/*navigation
+==================================================*/
+.catalog-nav__title{
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  padding-top: 4px;
+  margin-bottom: 24px;
+}
+
+/*filter
+==================================================*/
 .product-filter{
   background-color: #efefef;
-  outline: 1px solid red;
   width: 270px;
   float:left;
   margin-left:60px;
+  margin-top: 50px;
   min-height: 1280px;
+}
+
+.product-filter__title,.content-sort__title{
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 1px;
+  padding: 25px 0;
+}
+
+.range-filter{
+  margin-top: 70px;
+  border-top: 2px solid black;
+  margin-right: 69px;
+  padding-bottom: 39px;
+}
+.range-filter__title{
+  margin-top: 12px;
+}
+.range-filter__controls{
+  position: relative;
+  height: 25px;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+.scale{
+  margin-top:17px;
+  height:2px;
+  background:#dcdcdc;
+}
+.bar{
+  height:2px;
+  background:#72ca00;
+  margin-left:12px;
+  width:100px;
+  }
+.toggle{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000000;
+  background: #efefef;
+  cursor: pointer;
+  border-radius: 50%;
+  top: 11px;
+}
+.min-toggle{
+  left:-1px;
+}
+.max-toggle{
+  left: 111px;
+}
+.range-filter__title{
+
+}
+.range-filter__price input{
+  margin-right: 16px;
+  margin-left: 4px;
+  margin-top: 6px;
+  width: 43px;
+  border: none;
+  font-size: 14px;
+  font-family: "Gilroy",sans-serif,serif;
+  text-align: left;
+  border-radius: 5px;
+  background-color: inherit;
+
+}
+.color-filter{
+  border-top:2px solid black;
+  margin-right: 69px;
+}
+
+input[type="checkbox"]{
+  display: block;
+}
+.bluetooth-filter{
+  margin-top:78px;
+  border-top:2px solid black;
+  margin-right: 69px;
+}
+.content-sort__title{
+ float:left;
+}
+
+button{
+  border:none;
+  margin-top: 105px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: inherit;
+  letter-spacing: 0.1em;
+  color: #000;
 }
 /*catalog-content
 ==================================================*/
-.catalog-content{
-  outline: 2px dotted blue;
-  float:right;
-  width: 760px;
-}
 
+
+.content-sort__title{
+  margin-bottom:0;
+}
+.catalog-list{
+  margin-top: 70px;
+}
+.catalog-content{
+  float:right;
+  width: 759px;
+  margin-top: 50px;
+}
+.content-sort{
+  background-color: #ebebeb;
+}
+.sort-up-down{float:right}
 .content-sort__list{
-  padding: 0;
+  padding-top: 25px;
   margin: 0;
+  display: inline-block;
+  margin-left: 19px;
+}
+.content-sort__item a{
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color:#000;
+  text-decoration: none;
 }
 .content-sort__list li{
   list-style-type: none;
   display: inline-block;
+  margin-right:26px;
 }
-
+.catalog-item:nth-child(even){margin-right: 0;}
 .catalog-item{
-
-  float:right;;
+  float: left;
+  margin-right: 39px;
+  margin-bottom: 60px;
 }
+.catalog-item__title a{
 
-.catalog-item__descr a{
+  width: 256px;
+  float:left;
+}
+.catalog-item__price {
+    margin-left: 21px;
+}
+.catalog-item__title a, .range-filter__title, .color-filter__title, .bluetooth-filter__title{
   font-size: 18px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  color:black
+  color:#000;
 }
 .catalog-item__descr span{
   color:#efefef;
   font-size: 16px;
 }
-
+.pages-control{
+  width:760px;
+  margin:0 auto;
+  padding: 8px 0px;
+  background-color: #ebebeb;
+}
 .pages-control__item{
   list-style-type: none;
   display: inline-block;
+}
+.pages-control__item a{
+
+  font-family: "Gilroy-bold",sans-serif,serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: inherit;
+  letter-spacing: 0.1em;
+  color: #000;
+
 }
 
 @font-face {

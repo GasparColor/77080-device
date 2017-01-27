@@ -5,6 +5,7 @@
 .wrapper{
   width: 1160px;
   margin:0 auto;
+
 }
 .clearfix:after {
   content: "";
@@ -360,6 +361,108 @@ input[type="search"]{
   opacity:0.3;
 }
 .footer-logo{
+    padding-top: 56px;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-logo a{
+  text-decoration: none;
+  color:#f7e184;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+}
+.page-footer__contacts{
+  margin-top: 12px;
+}
+.page-footer__contacts p{
+  font-size: 15px;
+  font-family: "OpenSans",sans-serif,serif;
+  color:#fff;
+}
+.footer-flex-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu{
+  margin-top: 71px;
+}
+.footer-menu a{
+  color:#fff;
+}
+
+.special-menu.footer-menu li:first-of-type{
+  margin-right: 70px;
+}
+
+.footer-nav{
+  margin-top: 12px;
+}
+.footer-nav__list{
+  list-style-type: none;
+  /*display: block;*/
+}
+.footer-nav__list li{
+  margin-right: 45px;
+  display: inline-block;
+}
+.footer-nav__item a:hover{
+  opacity: 0.6;
+}
+.footer-nav__item a:active{
+  opacity: 0.3;
+}
+.footer-nav__item a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Gilroy-bold",sans-serif,serif;
+}
+
+.social-links{
+  /*width: 210px;
+  margin: 47px auto 0;*/
+  display:flex;
+  justify-content: center;
+}
+.social-links li{
+  display: inline-block;
+  margin-left: 12px;
+}
+.htmlacademy-logo{
+  display: flex;
+  justify-content: flex-end;
+}
+.phone-number{
+  margin-top: 27px;
+  font-size: 15px;
+  font-family: "OpenSans",sans-serif,serif;
+  color:#fff;
+
+}
+
+
+/*.page-footer{
+  min-height: 320px;
+  background-color: #464646;
+}
+.footer-logo::after{
+  content: "";
+  display: block;
+  width: 81px;
+  height: 7px;
+  position: absolute;
+  bottom: -133px;
+  background-color: #ffe27f;
+}
+.footer-logo a:hover{color:#ffc600;}
+.footer-logo a:active{color:#ffc600;
+  opacity:0.3;
+}
+.footer-logo{
   margin-top: 56px;
   float: left;
   position: relative;
@@ -432,7 +535,7 @@ display:inline-block;
   color:#fff;
 
 }
-
+*/
 /*catalog
 ==================================================*/
 

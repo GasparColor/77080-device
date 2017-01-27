@@ -54,10 +54,10 @@ input[type="search"]{
 }
 
 .special-menu{
-  display: inline-block;
   float:right;
   margin-top: -4px;
 }
+
 .special-menu__list a:hover{opacity:0.6}
 .special-menu__list a:active{opacity:0.3}
 .special-menu ul{
@@ -66,17 +66,22 @@ input[type="search"]{
 }
 .special-menu li{
   display: inline-block;
-  margin-right: 54px;
+  margin-right: 49px;
 }
 .special-menu li:last-child{margin-right:0}
 .special-menu li:first-of-type{
   margin-right: 233px;
 }
 .special-menu a{
+  margin: 0;
   text-decoration: none;
   color:#000;
   font-size: 15px;
+  letter-spacing: 0.02em;
   font-family: "Open Sans",sans-serif,serif;
+}
+.special-menu__list--login{
+  outline: 1px solid blue;
 }
 
 .catalog{
@@ -168,10 +173,11 @@ input[type="search"]{
   line-height: 23px;
 }
 .slider__more-info{
-  margin-top: 58px;
+  margin:58px 0 0 45px;
   display: block;
   font-family: "Gilroy-bold",sans-serif,serif;
   font-size: 18px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
   color:#000;
@@ -202,8 +208,9 @@ input[type="search"]{
 ==================================================*/
 .popular-sections{
   font-size: 0;
+  margin-bottom: 182px;
 }
-.popular-section:last-child{
+.popular-section:nth-child(6n){
   margin-right: 0px;
 }
 .popular-section{
@@ -233,13 +240,16 @@ input[type="search"]{
 ==================================================*/
 .services{
   background-color: #e5e5e5;
-  margin-top: 182px;
-  height: 288px; /*--- по другому не смог сжать высоту блока, не понял че он так вытянулся, а min-height не работает ---*/
+  position: relative;
+  min-height: 290px; /*по другому пока не получилось растянуть блок*/
+  margin-bottom: 94px;
+
 }
 .services__list{
   float:left;
   position:relative;
   top:-25px;
+  width: 238px;
 }
 .services__item{
   list-style-type:none;
@@ -255,10 +265,14 @@ input[type="search"]{
   color:#000;
 }
 .services__info{
-  width: 753px;
+  /*width: 753px;
   float:right;
   position: relative;
-  top: -68px;
+  top: -68px;*/
+  width: 753px;
+  position: absolute;
+  left: 41%;
+  top: -70px;
 
 }
 
@@ -284,9 +298,12 @@ input[type="search"]{
 ==================================================*/
 
 .logotypes {
-  margin-top: 273px;
+ margin-bottom: 99px;
 }
-
+.logotypes__img:nth-child(4n){margin-right: 0}
+.logotypes__img{
+  margin-right: 35px;
+}
 
 /* about-us
 ==================================================*/
@@ -309,12 +326,17 @@ input[type="search"]{
   font-size: 15px;
   font-family: "OpenSans",sans-serif,serif;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
+  width: 475px;
+
+}
+.contacts__text{
+  width: 560px;
 }
 
 .about-us__list{
   display:inline-block;
-  margin-top: 15px;
+  margin-top: 23px;
 }
 .about-us__list li{
   margin-top:20px;
@@ -333,11 +355,14 @@ input[type="search"]{
   text-decoration: none;
   text-transform: uppercase;
   color:#000;
-  margin:57px 0 91px 21px;
+  margin:57px 0 91px 41px;
   letter-spacing: 0.2em;
 }
+.about-us__link{
+  margin-left: 25px;
+}
 .contacts__map img{
-  margin-bottom: 25px;
+  margin: 8px 0 21px;
 }
 
 /* footer
@@ -386,18 +411,18 @@ input[type="search"]{
   justify-content: space-between;
 }
 .footer-menu{
-  margin-top: 71px;
+  margin-top: 69px;
 }
 .footer-menu a{
   color:#fff;
 }
 
 .special-menu.footer-menu li:first-of-type{
-  margin-right: 70px;
+  margin-right: 56px;
 }
 
 .footer-nav{
-  margin-top: 12px;
+  margin-top: 7px;
 }
 .footer-nav__list{
   list-style-type: none;
@@ -427,10 +452,15 @@ input[type="search"]{
   margin: 47px auto 0;*/
   display:flex;
   justify-content: center;
+  padding: 0;
+  margin-top:43px;
+}
+.social-links__item a{
+  margin-right: 6px;
 }
 .social-links li{
   display: inline-block;
-  margin-left: 12px;
+  margin-left: 9px;
 }
 .htmlacademy-logo{
   display: flex;
@@ -444,104 +474,12 @@ input[type="search"]{
 
 }
 
-
-/*.page-footer{
-  min-height: 320px;
-  background-color: #464646;
-}
-.footer-logo::after{
-  content: "";
-  display: block;
-  width: 81px;
-  height: 7px;
-  position: absolute;
-  bottom: -133px;
-  background-color: #ffe27f;
-}
-.footer-logo a:hover{color:#ffc600;}
-.footer-logo a:active{color:#ffc600;
-  opacity:0.3;
-}
-.footer-logo{
-  margin-top: 56px;
-  float: left;
-  position: relative;
-}
-
-.footer-logo a{
-  text-decoration: none;
-  color:#f7e184;
-  text-transform: uppercase;
-  font-size: 48px;
-  font-family: "Gilroy-bold",sans-serif,serif;
-}
-.page-footer__contacts{
-  margin-top: 122px;
-  display: inline-block;
-}
-.page-footer__contacts p{
-  font-size: 15px;
-  font-family: "OpenSans",sans-serif,serif;
-  color:#fff;
-}
-
-.footer-menu{
-  margin-top:68px;
-}
-.footer-menu a{
-  color:#fff;
-}
-
-.special-menu.footer-menu li:first-of-type{
-  margin-right: 70px;
-}
-
-.footer-nav{
-display: inline-block;
-}
-.footer-nav__list{list-style-type: none;display: block;
-}
-.footer-nav__list li{
-  margin-right: 45px;
-  display: inline-block;
-}
-.footer-nav__item a:hover{
-  opacity: 0.6;
-}
-.footer-nav__item a:active{
-  opacity: 0.3;
-}
-.footer-nav__item a{
-  text-decoration: none;
-  color:#fff;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-family: "Gilroy-bold",sans-serif,serif;
-}
-
-.social-links{
-  width: 250px;
-  margin:0 auto
-}
-.social-links li{
-display:inline-block;
-}
-.htmlacademy-logo{float:right;}
-.phone-number{
-  float: right;
-  font-size: 15px;
-  font-family: "OpenSans",sans-serif,serif;
-  color:#fff;
-
-}
-*/
 /*catalog
 ==================================================*/
 
 .breadcrumbs{
- padding:0;
- margin:0;
+  padding:0;
+  margin:0;
 }
 
 .breadcrumbs li{
@@ -571,7 +509,7 @@ display:inline-block;
   background-color: #efefef;
   width: 270px;
   float:left;
-  margin-left:60px;
+  /*margin-left:60px;*/
   margin-top: 50px;
   min-height: 1280px;
 }

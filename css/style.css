@@ -22,6 +22,7 @@
   margin:0 auto;
   outline: 1px solid blue;
 }
+
 label.write-us-form__name, label.write-us-form__email {
   font-size: 18px;
   line-height: 18px;
@@ -112,6 +113,13 @@ input[type="search"]{
 .special-menu li:first-of-type{
   margin-right: 233px;
 }
+.special-menu--login li:first-of-type{
+  margin-right: 75px;
+}
+.user-block__logout{
+  padding-left: 14px;
+  opacity: 0.3;
+}
 .special-menu a{
   margin: 0;
   text-decoration: none;
@@ -120,10 +128,6 @@ input[type="search"]{
   letter-spacing: 0.02em;
   font-family: "Open Sans",sans-serif,serif;
 }
-.special-menu__list--login{
-  outline: 1px solid blue;
-}
-
 .catalog{
   margin-top: 36px;
   display:inline-block;
@@ -192,12 +196,13 @@ input[type="search"]{
   margin-top: -111px;
   margin-left: 94px;
 }
-.slider__img--slider02{
+.slider02 .slider__img {
   margin-top: -99px;
   margin-left: 119px;
   margin-bottom: -9px;
+  outline: 1px solid red;
 }
-.slider__img--slider03{
+.slider03 .slider__img{
   margin-top: -47px;
   margin-bottom: 90px;
   margin-left: 35px
@@ -207,10 +212,11 @@ input[type="search"]{
   width: 560px;
   float:right;
 }
-.slider__inner-wrapper--slider02{
+.slider02 .slider__inner-wrapper{
   width: 558px;
+  outline: 1px solid blue;
 }
-.slider__inner-wrapper--slider03{
+.slider03 .slider__inner-wrapper{
   width: 561px;
 }
 .slider__title::after{
@@ -222,11 +228,12 @@ input[type="search"]{
   font-family: "Gilroy-bold", sans-serif,serif;
   color:white;
 }
-.slider__title--slider02::after{
+.slider02 .slider__title::after{
   content: "02";
   right: -95%;
+  outline: 1px solid black;
 }
-.slider__title--slider03::after{
+.slider03 .slider__title::after{
   content: "03";
   right: 49px;
   top: -111px;
@@ -238,7 +245,7 @@ input[type="search"]{
   position: relative;
   top: -28px;
 }
-.slider__title--slider02{
+.slider02 .slider__title{
   width:260px
 }
 
@@ -268,14 +275,14 @@ input[type="search"]{
   display:inline-block;
   width: 150px;
 }
-.product-features__item--slider03{
+.slider03 .product-features__item{
   width: 157px;
 }
 .product-features__value{
   font-size: 36px;
   font-family: "Gilroy",sans-serif,serif;
 }
-.product-features__value--slider02{
+.slider02 .product-features__value{
   width: 557px;
 }
 .product-features__descr{
@@ -569,15 +576,32 @@ input[type="search"]{
   margin:0;
 }
 
-.breadcrumbs li{
+.breadcrumbs__item:not(.breadcrumbs__item--active)::after{
+  content: url("../img/icons/nav-arrow.png");
+  position: absolute;
+  top: -1px;
+  right: 6px;
+
+}
+.breadcrumbs__item{
+  position: relative;
   list-style-type: none;
   display: inline-block;
+  margin-right: 11px;
 }
-.breadcrumbs a{
+
+.breadcrumbs__item a:hover{
+  opacity: 0.6;
+}
+.breadcrumbs__item a:active{
+  opacity: 0.1;
+}
+.breadcrumbs__item a{
   color:#464646;
   font-size: 14px;
   text-decoration: none;
   margin-right: 25px;
+  opacity: 0.3;
 }
 
 /*navigation
@@ -593,6 +617,7 @@ input[type="search"]{
 
 /*filter
 ==================================================*/
+
 .product-filter{
   background-color: #efefef;
   width: 270px;
@@ -622,7 +647,7 @@ input[type="search"]{
 }
 .range-filter__controls{
   position: relative;
-  height: 25px;
+  height: 28px;
 
   border-radius: 5px;
   overflow: hidden;
@@ -637,6 +662,11 @@ input[type="search"]{
   background:#72ca00;
   margin-left:12px;
   width:100px;
+  }
+  .toggle:active {
+  border: 2px solid #fff;
+  background: #63b000;
+  box-shadow: 0px 2px 4px -2px black;
   }
 .toggle{
   position: absolute;
@@ -702,6 +732,42 @@ button{
 /*catalog-content
 ==================================================*/
 
+.catalog-item:hover .catalog-item__hover-block{
+  visibility:visible;
+}
+.catalog-item:hover{
+  opacity: 0.5;
+}
+.catalog-item__hover-block{
+  visibility:hidden;
+  position: absolute;
+  display: flex;
+  top: 187px;
+  right: 79px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 205px;
+}
+.catalog-item__add-to-basket{
+  font-size: 18px;
+  font-family: "Gilroy-bold",sans-serif,serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#000;
+  background-color: #ffc600;
+  padding:8px 35px;
+}
+.catalog-item__add-to-comparison{
+  font-size: 13px;
+  font-family: "OpenSans",sans-serif,serif;
+  color:#000;
+  opacity: 0.5;
+  text-decoration: none;
+  margin-top:15px;
+}
+
 .content-sort__title{
   margin-bottom:0;
 }
@@ -744,6 +810,7 @@ button{
   float: left;
   margin-right: 39px;
   margin-bottom: 60px;
+  position: relative;
 }
 .catalog-item__title a{
   width: 256px;

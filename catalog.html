@@ -22,11 +22,12 @@
           <input id="search-field" type="search" placeholder="Поиск по сайту">
         </form>
 
-        <div class="special-menu">
-          <ul class="special-menu__list special-menu__list--login">
+        <div class="special-menu special-menu--login">
+          <ul class="special-menu__list ">
             <li>
-              <div class="user-block ">
-                <a href="#">Войти</a>
+              <div class="user-block user-block--login">
+                <a class="user-block__name" href="#">Валетнин Петухов</a>
+                <a class="user-block__logout" href="#">Выйти</a>
               </div>
             </li>
             <li class="special-menu__item">
@@ -198,35 +199,59 @@
         <div class="catalog-list clearfix">
 
           <article class="catalog-item">
-            <img class="catalog-item__img" src="img/catalog-01.jpg" alt="изображение товара">
-            <h1 class="catalog-item__title">
+            <img class="catalog-item__img" src="img/catalog-01.jpg" alt="Любительская селфи-палка">
+            <h2 class="catalog-item__title">
               <a href="#">Любительская селфи-палка</a>
-            </h1>
+            </h2>
             <span class="catalog-item__price">500 руб.</span>
+
+            <div class="catalog-item__hover-block">
+            <a href="#" class="catalog-item__add-to-basket">в корзину</a>
+            <a href="#" class="catalog-item__add-to-comparison">Добавить к сравнению</a>
+            </div>
+
           </article>
 
           <article class="catalog-item">
-            <img class="catalog-item__img" src="img/catalog-02.jpg" alt="изображение товара">
-            <h1 class="catalog-item__title">
+            <img class="catalog-item__img" src="img/catalog-02.jpg" alt="Профессиональная селфи-палка">
+            <h2 class="catalog-item__title">
               <a href="#">Профессиональная селфи-палка</a>
-            </h1>
+            </h2>
             <span class="catalog-item__price">1 500 руб.</span>
+
+            <div class="catalog-item__hover-block">
+            <a href="#" class="catalog-item__add-to-basket">в корзину</a>
+            <a href="#" class="catalog-item__add-to-comparison">Добавить к сравнению</a>
+            </div>
+
           </article>
 
           <article class="catalog-item">
-            <img class="catalog-item__img" src="img/catalog-03.jpg" alt="изображение товара">
-            <h1 class="catalog-item__title">
+            <img class="catalog-item__img" src="img/catalog-03.jpg" alt="Непотопляемая селфи-палка">
+            <h2 class="catalog-item__title">
               <a href="#">Непотопляемая селфи-палка</a>
-            </h1>
+            </h2>
             <span class="catalog-item__price">2 500 руб.</span>
+
+            <div class="catalog-item__hover-block">
+            <a href="#" class="catalog-item__add-to-basket">в корзину</a>
+            <a href="#" class="catalog-item__add-to-comparison">Добавить к сравнению</a>
+            </div>
+
           </article>
 
           <article class="catalog-item">
-            <img class="catalog-item__img" src="img/catalog-04.jpg" alt="изображение товара">
-            <h1 class="catalog-item__title">
+            <img class="catalog-item__img" src="img/catalog-04.jpg" alt="Селфи-палка «Следуй за мной»">
+            <h2 class="catalog-item__title">
               <a href="#">Селфи-палка «Следуй за мной»</a>
-            </h1>
+            </h2>
             <span class="catalog-item__price">4 900 руб.</span>
+
+            <div class="catalog-item__hover-block">
+            <a href="#" class="catalog-item__add-to-basket">в корзину</a>
+            <a href="#" class="catalog-item__add-to-comparison">Добавить к сравнению</a>
+            </div>
+
           </article>
 
         </div>
@@ -309,13 +334,13 @@
 
         <ul class="social-links">
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/facebook.png" alt="">Фейсбук</a>
+            <a href="#"><img src="img/icons/facebook.png" alt="facebook">Фейсбук</a>
           </li>
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/instagram.png" alt="">Инстаграм</a>
+            <a href="#"><img src="img/icons/instagram.png" alt="instagram">Инстаграм</a>
           </li>
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/twitter.png" alt="">Твиттер</a>
+            <a href="#"><img src="img/icons/twitter.png" alt="twitter">Твиттер</a>
           </li>
         </ul>
 

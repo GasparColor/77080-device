@@ -191,7 +191,9 @@ input[type="search"]{
 
 /* slider
 ==================================================*/
-
+.slider02, .slider03{
+  display: none
+}
 .slider__img{
   margin-top: -111px;
   padding-left: 94px;
@@ -556,12 +558,7 @@ input[type="search"]{
 }
 
 .social-links{
-  /*width: 210px;
-  margin: 47px auto 0;*/
-  display:flex;
-  justify-content: center;
-  padding: 0;
-  margin-top:43px;
+
   font-size: 0;
 }
 .social-links__item a{
@@ -572,8 +569,7 @@ input[type="search"]{
   margin-left: 9px;
 }
 .htmlacademy-logo{
-  display: flex;
-  justify-content: flex-end;
+  margin-left: 43%;
 }
 .phone-number{
   margin-top: 27px;
@@ -581,6 +577,11 @@ input[type="search"]{
   font-family: "OpenSans",sans-serif,serif;
   color:#fff;
 
+}
+.footer-social-wrapper {
+    display: flex;
+    margin-top: 43px;
+    justify-content: flex-end;
 }
 
 /*catalog

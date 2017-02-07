@@ -52,6 +52,7 @@ input#popup-name:hover, input#popup-email:hover, textarea:hover{
 input#popup-name:focus, input#popup-email:focus, textarea:focus{
   background-color: inherit;
   outline-color: #e5e5e5;
+  -moz-outline-color: #e5e5e5;
 }
 
 input#popup-name, input#popup-email ,textarea{
@@ -242,8 +243,9 @@ input[type="search"]{
   vertical-align: top;
   position: relative;
 }
+
 .catalog:hover ~ .slider{outline: 2px solid black}
-.catalog:hover  .catalog__menu--hidden{display: block;}
+.catalog:hover  .catalog__menu--hidden{visibility: visible;}
 .catalog:hover{
   color: rgba(0,0,0, .6);
 }
@@ -257,7 +259,7 @@ input[type="search"]{
 
 }
 .catalog__menu--hidden{
-  display:none
+  visibility: hidden;
 }
 
 .catalog__list{
@@ -327,6 +329,14 @@ input[type="search"]{
 
 /* slider
 ==================================================*/
+
+#btn-1:checked ~ .wrapper #slide1,
+#btn-2:checked ~ .wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+.slider{display: none}
 .slider02, .slider03{
   display: none
 }
@@ -349,6 +359,7 @@ input[type="search"]{
 .slider__inner-wrapper{
   width: 561px;
   float:right;
+  position: relative;
 }
 .slider02 .slider__inner-wrapper{
   width: 558px;
@@ -422,6 +433,25 @@ input[type="search"]{
 }
 .slider__more-info a{
 
+}
+.slider-btn{
+  display: none;
+}
+.slider__controls{
+  position: absolute;
+  top: 215px;
+  right: 74px;
+}
+.slider__controls label{
+  display:inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .product-features{
   margin-top: 54px;
@@ -506,8 +536,8 @@ input[type="search"]{
   width: 7px;
   height: 319px;
   color: black;
-  top: -100px;
-  right: -42px;
+  top: -81px;
+  right: -46px;
   /*left: 651px;*/
   background-color: #000;
 }
@@ -1164,13 +1194,13 @@ button{
 .sort-up-down li{
   list-style-type: none;
 }
-.sort-up-down__item--up a{
+.sort-up-down__item-up a{
   position: absolute;
   top: 3px;
   right: 0px;
   border: 10px solid transparent;	border-bottom: 10px solid #bcbcbc;
 }
-.sort-up-down__item--down a{
+.sort-up-down__item-down a{
   position: absolute;
   top: 14px;
   right: -42px;
@@ -1228,8 +1258,6 @@ button{
   padding: 25px 0px;
   background-color: #ebebeb;
 }
-
-
 .pages-control__item:last-child{
   margin-right: 0;
 }
@@ -1237,7 +1265,7 @@ button{
   margin: 0;
   padding: 0;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 .pages-control__item{
   list-style-type: none;
@@ -1276,7 +1304,6 @@ justify-content: center;
   height: 23px;
   background-position: -5px -38px;
 }
-
 .sprite-footer-cart {
   top: 4px;
   left: -16px;
@@ -1284,7 +1311,6 @@ justify-content: center;
   height: 12px;
   background-position: -5px -71px;
 }
-
 .sprite-footer-compare {
   top: 6px;
   left: -20px;
@@ -1292,7 +1318,6 @@ justify-content: center;
   height: 10px;
   background-position: -5px -93px;
 }
-
 .sprite-footer-login {
   top: 4px;
   left: -25px;
@@ -1300,7 +1325,6 @@ justify-content: center;
   height: 12px;
   background-position: -5px -113px;
 }
-
 .sprite-header-cart {
   top: 4px;
   left: -17px;
@@ -1308,7 +1332,6 @@ justify-content: center;
   height: 12px;
   background-position: -5px -135px;
 }
-
 .sprite-header-compare {
   position: absolute;
   top: 6px;
@@ -1325,27 +1348,23 @@ justify-content: center;
   height: 12px;
   background-position: -5px -177px;
 }
-
 .sprite-plus {
   top: 1px;
-  right: -28px;
+  left: 232px;
   width: 16px;
   height: 16px;
   background-position: -5px -199px;
 }
-
 .sprite-radio {
   width: 24px;
   height: 23px;
   background-position: -5px -225px;
 }
-
 .sprite-radio-active {
   width: 24px;
   height: 23px;
   background-position: -5px -258px;
 }
-
 .sprite-search {
   top: 12px;
   left: 4px;
@@ -1356,6 +1375,7 @@ justify-content: center;
 
 /*fonts
 ==================================================*/
+
 @font-face {
     font-family: "Gilroy"; /* Имя шрифта */
     src: url(../fonts/Gilroylight.ttf); /* Путь к файлу со шрифтом */
@@ -1374,7 +1394,6 @@ justify-content: center;
   }
 
 /* TODO:
-catalog-item__title
 styleguid
 hover
 map

@@ -97,7 +97,10 @@
     </div>
 
     <!-- slider -->
-
+<div class="slider-wrapper">
+  <input class="slider-btn" type="radio" id="btn-1" name="toggle" checked>
+  <input class="slider-btn" type="radio" id="btn-2" name="toggle">
+  <input class="slider-btn" type="radio" id="btn-3" name="toggle">
 <div class="slider slider01 wrapper" id="slide1">
 
       <img class="slider__img" src="img/slider-01.png" alt="Monopod">
@@ -135,9 +138,7 @@
           <label for="btn-1"></label>
           <label for="btn-2"></label>
           <label for="btn-3"></label>
-          <input class="slider-btn" type="radio" id="btn-1" name="toggle" checked>
-          <input class="slider-btn" type="radio" id="btn-2" name="toggle">
-          <input class="slider-btn" type="radio" id="btn-3" name="toggle">
+
         </div>
       </div>
 
@@ -200,6 +201,8 @@
 
             </div>
         </div>
+    </div>
+
     </div>
 
     <!-- popular sections -->
@@ -426,6 +429,7 @@
 
     <div class="write-us-popup">
       <form action="get" class="write-us-form clearfix">
+        <a class="write-us-popup__close" href="#"><img src="img/icons/menu-close.png" alt=""></a>
         <label for="popup-name" class="write-us-form__name">Ваше имя:
           <input id="popup-name" type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
         <label for="popup-email" class="write-us-form__email">Ваш e-mail:

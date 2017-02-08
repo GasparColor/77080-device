@@ -162,6 +162,7 @@ input#popup-email{
 .search-on-site__button:hover{
   color:rgba(255,255,255, 1);
   background-color: #000;
+  display:block;
 }
 .search-on-site__button{
   margin: 0;
@@ -171,12 +172,13 @@ input#popup-email{
   text-transform: capitalize;
   padding: 1px 10px;
   outline: 2px solid #000;
-  position: relative;
-  left: -5px;
-  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 360px;
+  display:none;
 }
 input[type="search"]:focus + .search-on-site__button{
-  visibility: visible;
+  display:block;
 }
 input[type="search"]:hover{
   color:rgba(0,0,0, 0.6);
@@ -250,7 +252,9 @@ input[type="search"]{
 }
 
 .catalog:hover ~ .slider{outline: 2px solid black}
-.catalog:hover  .catalog__menu--hidden{visibility: visible;}
+.catalog:hover  .catalog__menu--hidden{
+  background-color: #f7e296;
+  display:block;}
 .catalog:hover{
   color: rgba(0,0,0, .6);
 }
@@ -264,7 +268,7 @@ input[type="search"]{
 
 }
 .catalog__menu--hidden{
-  visibility: hidden;
+  display:none;
 }
 
 .catalog__list{
@@ -651,6 +655,7 @@ input[type="search"]{
   width: 481px;
   float:left;
   position: relative;
+  padding-bottom: 91px;
 }
 .contacts{
   width: 560px;
@@ -712,7 +717,7 @@ input[type="search"]{
   text-decoration: none;
   text-transform: uppercase;
   color:#000;
-  margin: 58px 0 91px 41px;
+  margin: 58px 0 0 41px;
   letter-spacing: 0.2em;
 }
 .contacts__link{

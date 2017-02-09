@@ -596,18 +596,39 @@ input[type="search"]{
   text-align: left;
   /* padding-left: 15px; */
 }
+
 .services__info {
   width: 759px;
   transform: translateY(-70px);
   float: right;
   padding-bottom: -8px;
-  margin-bottom: -104px;
+}
+.services-slide01, .services-slide02, .services-slide03 {
+  margin-top: 39px;
+  padding-bottom: 61px;
+}
+.services-slide01{
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 558px 30px;
+}
+.services-slide02{
+  background-image: url("../img/warranty.png");
+  background-repeat: no-repeat;
+  background-position: 558px 6px;
+}
+.services-slide03{
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 558px 6px;
 }
 .services__title{
   font-size: 47px;
   letter-spacing: 0.02em;
   font-family: "Gilroy-bold","Arial", sans-serif,serif;
   margin-bottom: 30px;
+  margin-top: -19px;
+  padding-top: 20px;
 }
 .services__text{
   width: 430px;
@@ -623,6 +644,7 @@ input[type="search"]{
   margin-right: 62px;
   top: -171px;
 }
+
 
 /* logotypes
 ==================================================*/
@@ -717,17 +739,18 @@ input[type="search"]{
   text-decoration: none;
   text-transform: uppercase;
   color:#000;
-  margin: 58px 0 0 41px;
+  margin: 66px 0 0 41px;
   letter-spacing: 0.2em;
 }
 .contacts__link{
-  margin-top: 76px;
+  margin-top: 69px;
 }
 .about-us__link{
   margin-left: 25px;
 }
 .contacts__map img{
-  margin: 8px 0 21px;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 /* footer

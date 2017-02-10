@@ -19,7 +19,6 @@
         </div>
 
         <form class="search-on-site">
-          <i class="sprite sprite-search"></i>
           <input id="search-field" type="search" placeholder="Поиск по сайту">
           <button class="search-on-site__button">Найти</button>
         </form>
@@ -28,17 +27,15 @@
           <ul class="special-menu__list">
             <li>
               <div class="user-block">
-                <i class="sprite sprite-header-login"></i>
                 <a href="#">Войти</a>
               </div>
             </li>
             <li class="special-menu__item">
-              <i class="sprite sprite-header-compare"></i>
-              <a href="#">Сравнить</a>
+
+              <a class="sprite-header-compare" href="#">Сравнить</a>
             </li>
             <li class="special-menu__item">
-              <i class="sprite sprite-header-cart"></i>
-              <a href="#">Корзина</a>
+              <a class="sprite-header-cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -47,7 +44,6 @@
 
           <div class="catalog">
             <div class="catalog__title">Каталог товаров</div>
-            <i class="sprite sprite-plus"></i>
             <div class="catalog__menu catalog__menu--hidden clearfix">
 
               <ul class="catalog__list">
@@ -268,7 +264,15 @@
 
     <section class="services">
       <div class="wrapper clearfix">
-        <ul class="services__list">
+        <input type="radio" id="services__btn-1" name="toggle" checked>
+        <input type="radio" id="services__btn-2" name="toggle">
+        <input type="radio" id="services__btn-3" name="toggle">
+            <div class="services__list">
+              <label class="services__label" for="services__btn-1">Доставка</label>
+              <label class="services__label" for="services__btn-2">Гарантия</label>
+              <label class="services__label" for="services__btn-3">Кредит</label>
+            </div>
+        <!--<ul class="services__list">
           <label for="services__btn1"><li class="services__item services__item--active">
             <a href="#">Доставка</a>
           </li></label>
@@ -278,22 +282,22 @@
           <li class="services__item">
             <a href="#">Кредит</a>
           </li>
-        </ul>
+        </ul>-->
 
-        
+
         <div class="services__info">
 
-        <div class="services-slide01"> 
+        <div class="services-slide01 slider-s" id="slider-s1">
           <h2 class="services__title">Доставка</h2>
           <p class="services__text">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </div>
-        </div> 
+        </div>
 
-        
-       
-       <!--<div class="services-slide02"> 
+
+
+       <!--<div class="services-slide02 slider-s" id="slide-s2">
           <h2 class="services__title">Гарантия</h2>
           <p class="services__text">
             Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -302,18 +306,18 @@
         </div>
         </div>
 
-         
-        
-        <div class="services-slide03"> 
+
+
+        <div class="services-slide03 slider-s" id="slide-s3">
           <h2 class="services__title">Кредит</h2>
           <p class="services__text">
             Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.
           </p>
         </div>
-        </div>-->
+      </div>-->
 
-       
+
       </div>
     </section>
 
@@ -393,17 +397,15 @@
           <ul class="special-menu__list">
             <li>
               <div class="user-block">
-                <i class="sprite sprite-footer-login"></i>
                 <a href="#">Войти</a>
               </div>
             </li>
             <li class="special-menu__item">
-              <i class="sprite sprite-footer-compare"></i>
-              <a href="#">Сравнить</a>
+              <a class="sprite-compare" href="#">Сравнить</a>
             </li>
             <li class="special-menu__item">
-              <i class="sprite sprite-footer-cart"></i>
-              <a href="#">Корзина</a>
+
+              <a class="sprite-cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -435,18 +437,18 @@
       <div class="footer-social-wrapper">
         <ul class="social-links">
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/facebook.png" alt="facebook">Фейсбук</a>
+            <a class="sprite-facebook" href="#">Фейсбук</a>
           </li>
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/instagram.png" alt="instagram">Инстаграм</a>
+            <a class="sprite-instagram" href="#">Инстаграм</a>
           </li>
           <li class="social-links__item">
-            <a href="#"><img src="img/icons/twitter.png" alt="twitter">Твиттер</a>
+            <a class="sprite-twitter" href="#">Твиттер</a>
           </li>
         </ul>
 
         <div class="htmlacademy-logo">
-          <a href="htmlacademy.ru"><img src="img/icons/copyright.png" alt="htmlacademy.ru"></a>
+          <a class="sprite-copyright" href="htmlacademy.ru"></a>
         </div>
         </div>
 

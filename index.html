@@ -19,7 +19,7 @@
         </div>
 
         <form class="search-on-site">
-          <input id="search-field" type="search" placeholder="Поиск по сайту">
+          <input class="search-field"  type="search" placeholder="Поиск по сайту">
           <button class="search-on-site__button">Найти</button>
         </form>
 
@@ -105,7 +105,7 @@
 
 <div class="slider slider01 wrapper" id="slide1">
 
-      <img class="slider__img" src="img/slider-01.png" alt="Monopod">
+      <img class="slider__img" src="img/slider-01.png" width="384"  height="486" alt="Monopod">
 
       <div class="slider__inner-wrapper">
         <h2 class="slider__title">
@@ -144,7 +144,7 @@
 
     <div class="slider slider02 wrapper" id="slide2">
 
-      <img class="slider__img slider__img--slider02" src="img/slider-02.png" alt="Smartwatch">
+      <img class="slider__img slider__img--slider02" width="345" height="485" src="img/slider-02.png" alt="Smartwatch">
 
         <div class="slider__inner-wrapper slider__inner-wrapper--slider02">
         <h1 class="slider__title slider__title--slider02">
@@ -170,7 +170,7 @@
 
  <div class="slider slider03 wrapper" id="slide3">
 
-      <img class="slider__img slider__img--slider03" src="img/slider-03.png" alt="Monopod">
+      <img class="slider__img slider__img--slider03" width="526" height="334" src="img/slider-03.png" alt="Monopod">
 
         <div class="slider__inner-wrapper slider__inner-wrapper--slider03">
         <h1 class="slider__title slider__title--slider03">
@@ -207,7 +207,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/virtual-reality.png" alt="virtual reallity"></a>
+          <a class="popular-section__img" href="#"><img src="img/virtual-reality.png" width="160" height="160" alt="virtual reallity"></a>
         </div>
         <a href="#" class="popular-section__title">
           Виртуальная реальность
@@ -216,7 +216,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/monopods.png" alt="monopods"></a>
+          <a class="popular-section__img" href="#"><img src="img/monopods.png" width="160" height="160" alt="monopods"></a>
         </div>
         <a href="#" class="popular-section__title">
           Моноподы для селфи
@@ -225,7 +225,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/action-cameras.png" alt="action cameras"></a>
+          <a class="popular-section__img" href="#"><img src="img/action-cameras.png" width="160" height="160" alt="action cameras"></a>
         </div>
         <a href="#" class="popular-section__title">
           Экшн-камеры
@@ -234,7 +234,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/fitness-bracelets.png" alt="fitness bracelets"></a>
+          <a class="popular-section__img" href="#"><img src="img/fitness-bracelets.png" width="160" height="160" alt="fitness bracelets"></a>
         </div>
         <a href="#" class="popular-section__title">
           Фитнесс браслеты
@@ -243,7 +243,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/smart-watch.png" alt="smart watch"></a>
+          <a class="popular-section__img" href="#"><img src="img/smart-watch.png" width="160" height="160" alt="smart watch"></a>
         </div>
         <a href="#" class="popular-section__title">
           Умные часы
@@ -252,7 +252,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a href="#"><img class="popular-section__img" src="img/quadrocopters.png" alt="quadrocopters"></a>
+          <a href="#"><img class="popular-section__img" src="img/quadrocopters.png" width="160" height="160" alt="quadrocopters"></a>
         </div>
         <a href="#" class="popular-section__title">
           Квадрокоптеры
@@ -460,20 +460,36 @@
 
     <div class="write-us-popup">
       <form action="get" class="write-us-form clearfix">
-        <a class="write-us-popup__close" href="#"><img src="img/icons/menu-close.png" alt=""></a>
+        <a class="write-us-popup__close" href="#"><span class="write-us-popup__close-bg"></span></a>
         <label  class="write-us-form__name">Ваше имя:
-          <input  class="write-us-form__name-input" type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+          <input  class="write-us-form__name-input" type="text" name="login" placeholder="Представьтесь, пожалуйста" required></label>
         <label  class="write-us-form__email">Ваш e-mail:
-          <input  class="write-us-form__email-input" type="text" name="name" placeholder="Для отправки ответа"></label>
+          <input  class="write-us-form__email-input" type="text" name="email" placeholder="Для отправки ответа" required></label>
 
         <label  class="write-us-form__text">Текст письма:
-          <textarea  class="write-us-form__text-textarea" id="popup-textarea" cols="82" rows="7" placeholder="В свободной форме"></textarea>
+          <textarea  class="write-us-form__text-textarea" id="popup-textarea" cols="82" rows="7" placeholder="В свободной форме" required></textarea>
         </label>
         <button type="button" name="button" class="button button-popup">Отправить</button>
       </form>
 
     </div>
 
+<script>
+  var link = document.querySelector(".contacts__link");
+  var popup = document.querySelector(".write-us-popup");
+  var close = popup.querySelector(".write-us-popup__close");
+  var login = popup.querySelector("[name=login]");
+  link.addEventListener("click", function(event) {
+     event.preventDefault();
+     popup.classList.add("write-us-popup-show");
+     login.focus();
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("write-us-popup-show");
+      });
+</script>
   </body>
 
 </html>

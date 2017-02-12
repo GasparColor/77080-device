@@ -105,7 +105,7 @@
 
 <div class="slider slider01 wrapper" id="slide1">
 
-      <img class="slider__img" src="img/slider-01.png" width="384"  height="486" alt="Monopod">
+      <img class="slider__img" src="img/slider-01.png" width="384" height="486" alt="Monopod">
 
       <div class="slider__inner-wrapper">
         <h2 class="slider__title">
@@ -144,7 +144,7 @@
 
     <div class="slider slider02 wrapper" id="slide2">
 
-      <img class="slider__img slider__img--slider02" width="345" height="485" src="img/slider-02.png" alt="Smartwatch">
+      <img class="slider__img slider__img--slider02" width="345" height="485" src="img/slider-02.png" alt="Smartwatch">
 
         <div class="slider__inner-wrapper slider__inner-wrapper--slider02">
         <h1 class="slider__title slider__title--slider02">
@@ -170,7 +170,7 @@
 
  <div class="slider slider03 wrapper" id="slide3">
 
-      <img class="slider__img slider__img--slider03" width="526" height="334" src="img/slider-03.png" alt="Monopod">
+      <img class="slider__img slider__img--slider03" width="526" height="334" src="img/slider-03.png" alt="Monopod">
 
         <div class="slider__inner-wrapper slider__inner-wrapper--slider03">
         <h1 class="slider__title slider__title--slider03">
@@ -207,7 +207,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/virtual-reality.png" width="160" height="160" alt="virtual reallity"></a>
+          <a class="popular-section__img" href="#"><img src="img/virtual-reality.png" width="160" height="160" alt="virtual reallity"></a>
         </div>
         <a href="#" class="popular-section__title">
           Виртуальная реальность
@@ -216,16 +216,16 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/monopods.png" width="160" height="160" alt="monopods"></a>
+          <a class="popular-section__img" href="catalog.html"><img src="img/monopods.png" width="160" height="160" alt="monopods"></a>
         </div>
-        <a href="#" class="popular-section__title">
+        <a href="catalog.html" class="popular-section__title">
           Моноподы для селфи
         </a>
       </div>
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/action-cameras.png" width="160" height="160" alt="action cameras"></a>
+          <a class="popular-section__img" href="#"><img src="img/action-cameras.png" width="160" height="160" alt="action cameras"></a>
         </div>
         <a href="#" class="popular-section__title">
           Экшн-камеры
@@ -234,7 +234,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/fitness-bracelets.png" width="160" height="160" alt="fitness bracelets"></a>
+          <a class="popular-section__img" href="#"><img src="img/fitness-bracelets.png" width="160" height="160" alt="fitness bracelets"></a>
         </div>
         <a href="#" class="popular-section__title">
           Фитнесс браслеты
@@ -243,7 +243,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a class="popular-section__img" href="#"><img src="img/smart-watch.png" width="160" height="160" alt="smart watch"></a>
+          <a class="popular-section__img" href="#"><img src="img/smart-watch.png" width="160" height="160" alt="smart watch"></a>
         </div>
         <a href="#" class="popular-section__title">
           Умные часы
@@ -252,7 +252,7 @@
 
       <div class="popular-section">
         <div class="popular-section__img-block">
-          <a href="#"><img class="popular-section__img" src="img/quadrocopters.png" width="160" height="160" alt="quadrocopters"></a>
+          <a href="#"><img class="popular-section__img" src="img/quadrocopters.png" width="160" height="160" alt="quadrocopters"></a>
         </div>
         <a href="#" class="popular-section__title">
           Квадрокоптеры
@@ -458,9 +458,15 @@
       </div>
     </footer>
 
+    <div class="modal-content-map">
+      <button class="write-us-popup__close" type="button"><span class="write-us-popup__close-bg"></span></button>
+      <div>google map iframe</div>
+    </div>
+    <div class="modal-overlay"></div>
+
     <div class="write-us-popup">
       <form action="get" class="write-us-form clearfix">
-        <a class="write-us-popup__close" href="#"><span class="write-us-popup__close-bg"></span></a>
+        <button class="write-us-popup__close"><span class="write-us-popup__close-bg"></span></button>
         <label  class="write-us-form__name">Ваше имя:
           <input  class="write-us-form__name-input" type="text" name="login" placeholder="Представьтесь, пожалуйста" required></label>
         <label  class="write-us-form__email">Ваш e-mail:
@@ -469,7 +475,7 @@
         <label  class="write-us-form__text">Текст письма:
           <textarea  class="write-us-form__text-textarea" id="popup-textarea" cols="82" rows="7" placeholder="В свободной форме" required></textarea>
         </label>
-        <button type="button" name="button" class="button button-popup">Отправить</button>
+        <button type="submit" name="button" class="button button-popup">Отправить</button>
       </form>
 
     </div>

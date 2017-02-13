@@ -203,6 +203,7 @@
     </div>
 
     <!-- popular sections -->
+
     <div class="popular-sections wrapper">
 
       <div class="popular-section">
@@ -219,7 +220,7 @@
           <a class="popular-section__img" href="catalog.html"><img src="img/monopods.png" width="160" height="160" alt="monopods"></a>
         </div>
         <a href="catalog.html" class="popular-section__title">
-          Моноподы для селфи
+          Моноподы для&nbsp;селфи
         </a>
       </div>
 
@@ -275,17 +276,6 @@
               <label class="services__label" for="services__btn-2">Гарантия</label>
               <label class="services__label" for="services__btn-3">Кредит</label>
             </div>
-        <!--<ul class="services__list">
-          <label for="services__btn1"><li class="services__item services__item--active">
-            <a href="#">Доставка</a>
-          </li></label>
-          <li class="services__item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="services__item">
-            <a href="#">Кредит</a>
-          </li>
-        </ul>-->
 
 
         <div class="services__info">
@@ -298,8 +288,6 @@
         </div>
 
 
-
-
        <div class="services-slide02 slider-s" id="slider-s2">
           <h2 class="services__title">Гарантия</h2>
           <p class="services__text">
@@ -307,8 +295,6 @@
             Товар, не дом, конечно же.
           </p>
         </div>
-
-
 
 
         <div class="services-slide03 slider-s" id="slider-s3">
@@ -495,6 +481,29 @@
         event.preventDefault();
         popup.classList.remove("write-us-popup-show");
       });
+
+    var mapOpen = document.querySelector(".contacts__map");
+
+    var mapPopup = document.querySelector(".modal-content-map");
+    var mapClose = mapPopup.querySelector(".write-us-popup__close");
+
+     mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      });   
 </script>
   </body>
 

@@ -2,7 +2,7 @@
 ==================================================*/
 
 .wrapper{
-  max-width: 1160px;
+  width: 1160px;
   padding: 0px 20px;
   margin: 0 auto;
 }
@@ -160,7 +160,7 @@
   width: 340px;
   background-color: #f2f2f2;
   border:none;
-  padding: 15px 0 15px 20px;
+  padding: 13px 0 13px 20px;
   font-family: "OpenSans","Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -182,6 +182,7 @@
 .write-us-form__text-textarea{
   width: 740px;
   margin-top:10px;
+  min-height: 120px; 
 }
 
 .button-popup{
@@ -346,6 +347,10 @@
   margin-top: -4px;
 }
 
+.special-menu__list{
+  width: 501px;
+}
+
 .special-menu__list a:hover{
   opacity: 0.6;
 }
@@ -372,6 +377,7 @@
 
 .special-menu li:first-of-type{
   width: 228px;
+  margin-left: 28px;
 }
 
 .special-menu--login li:first-of-type{
@@ -384,7 +390,6 @@
 }
 
 .user-block{
-  width: 228px;
   position: relative;
 }
 
@@ -561,6 +566,8 @@
 
 .slider-wrapper{
  position: relative;
+ width: 1200px;
+ margin: 0 auto;
 }
 
 .slider{
@@ -697,7 +704,7 @@
 .slider-controls{
   position: absolute;
   top: 217px;
-  right: 23%;
+  right: 93px;
   z-index: 2;
 }
 
@@ -1122,7 +1129,7 @@
 }
 
 .about-us__link{
-  margin-top: 47px;
+  margin-top: 57px;
   padding-left: 31px;
 }
 
@@ -1166,6 +1173,9 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
+}
+.footer-logo--catalog{
+  padding-top: 53px;
 }
 
 .footer-logo a{
@@ -1213,9 +1223,7 @@
   font-family: "OpenSans","Arial", sans-serif;
 }
 
-.special-menu.footer-menu li:first-of-type{
-  width: 54px;
-}
+
 
 .footer-nav{
   margin-top: 29px;
@@ -1251,7 +1259,7 @@
 }
 
 .social-links{
-  width: 310px;
+  width: 300px;
   font-size: 0;
   margin-right: auto;
   margin-left: auto;
@@ -1260,7 +1268,18 @@
 .social-links li{
   display: inline-block;
   vertical-align: top;
-   margin-left: 59px;
+   margin-left: 56px;
+}
+.footer-menu .special-menu__list{width: 299px;}
+.special-menu.footer-menu li{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.special-menu.footer-menu li:first-of-type {
+  width: 26px;
+  margin-left: 0;
+  margin-right: 83px;
 }
 
 .htmlacademy-logo{
@@ -1354,7 +1373,7 @@
   width: 270px;
   float:left;
   margin-left:60px;
-  min-height: 1280px;
+  min-height: 1283px;
   padding-left: 20px;
   position: relative;
 }
@@ -1936,7 +1955,7 @@ display: flex;
 
 .pages-control__item a{
   display: block;
-  padding: 25px;
+  padding: 25px 29px;
 }
 
 .pages-control__inner-item a{
@@ -2018,8 +2037,8 @@ display: flex;
   position: absolute;
   width: 13px;
   height: 12px;
-  top: 4px;
-  left: -24px;
+  top: 3px;
+  left: -26px;
   background-image: url(../img/icons/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -25px -47px;
@@ -2133,7 +2152,8 @@ display: flex;
 .sprite-copyright::before{
   content: "";
   position: absolute;
-  right: -3px;
+  top: 5px;
+  right: -1px;
   width: 27px;
   height: 34px;
   background-position: -137px -25px;
@@ -2190,8 +2210,8 @@ display: flex;
 .sprite-header-compare::before{
   content: "";
   position: absolute;
-  top: 6px;
-  left: -19px;
+  top: 5px;
+  left: -21px;
   width: 10px;
   height: 10px;
   background-position: -5px -47px;

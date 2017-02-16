@@ -1,6 +1,12 @@
 /* others
 ==================================================*/
 
+body{
+ width: 100%;
+ max-width: 100%;
+ overflow-x: hidden;
+}
+
 .wrapper{
   width: 1160px;
   padding: 0px 20px;
